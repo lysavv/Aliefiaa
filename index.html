@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biodata Diri</title>
+    <title>Biodata Aliefia</title>
     <style>
-
         body {
             background-color: #d0f0ff;
             font-family: 'Poppins', sans-serif;
@@ -22,7 +21,7 @@
             max-width: 600px;
             border-radius: 16px;
             padding: 20px;
-            box-shadow: 0 4px px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border: 2px solid #00aaff;
             position: relative;
         }
@@ -76,34 +75,33 @@
             font-size: 16px;
             background-color: #e6f7ff;
             color: #555;
-            pointer-events: none; 
+            pointer-events: none;
         }
 
         .form-group textarea {
             resize: none;
         }
 
-        .hobbies {
-            display: flex;
-            justify-content: space-between;
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
         }
 
-        .hobbies div {
-            flex: 1;
-            margin-right: 10px;
-            display: flex;
-            align-items: center;
+        .social-icons a {
+            margin: 0 10px;
+            display: inline-block;
         }
 
-        .hobbies input {
-            margin-right: 5px;
+        .social-icons img {
+            width: 32px;
+            height: 32px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>BIODATA DIRI</h1>
+        <h1>BIODATA</h1>
         <div class="profile-photo">
             <img src="kinich.jpeg" alt="kinich">
         </div>
@@ -125,13 +123,20 @@
         </div>
         <div class="form-group">
             <label for="alamat">Alamat:</label>
-            <textarea id="alamat" name="alamat" rows="1" readonly>Teyvat</textarea>
+            <textarea id="alamat" name="alamat" rows="3" readonly>Teyvat</textarea>
         </div>
         <div class="form-group">
-            <label for="hobi">Hobi:</label>
-            <textarea id="hobi" name="hobi" rows="3" readonly>1. Membaca
-2. Menari
-3. Bermain Game</textarea>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" value="aliefiafyaa@gmail.com" readonly>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/bearlovly_?igsh=dWFwc2Q3dmx3NG5j" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@bearsyl?_t=8qZr8OzT22R&_r=1" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+            </a>
         </div>
     </div>
 
